@@ -13,12 +13,12 @@ def ask_ivy():
     while True:
         # Ask the user
         askme = input("What would you like to ask Ivy? (or type 'exit' to quit): ")
-        if askme.strip().lower() in {"exit", "quit", "bye"}:
+        if askme.strip().lower() in {"exit", "quit", "bye", "tchüss"}:
             print("Goodbye!")
             break
 
         # Add instruction for short, human-like answer
-        prompt = askme + " extra extra short, human-like answer, do not mention it in the response."
+        prompt = askme + " extra extra short, your name is Ivy, human-like answer, do not mention it in the response."
 
         # Get response from Mistral
         chat_response = client.chat.complete(
