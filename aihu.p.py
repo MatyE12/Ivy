@@ -13,7 +13,7 @@ def ask_ivy():
     while True:
         # Ask the user
         askme = input("Mit szeretnél Ivytől kérdezni? (vagy írj exitet a kilépéshez!): ")
-        if askme.strip().lower() in {"exit", "szia", "bye", "tchüss"}:
+        if askme.strip().lower() in {"exit", "szia", "bye", "tchüss", "hello"}:
             print("Viszlát!")
             break
 
